@@ -70,7 +70,7 @@ const router = createBrowserRouter([
 
 
 (async () => {
-  const { publishableKey } = await fetch(`/stripe-config`, {
+  const { publishableKey } = await fetch(`/api/stripe-config`, {
     credentials: "include"
   }).then(res => res.json())
   const stripePromise = loadStripe(publishableKey);

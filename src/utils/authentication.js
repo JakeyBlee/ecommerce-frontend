@@ -1,5 +1,5 @@
 export const register = async (username, password, firstName, lastName) => {
-    const res = await fetch(`/register`, {
+    const res = await fetch(`/api/register`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -15,7 +15,7 @@ export const register = async (username, password, firstName, lastName) => {
 };
 
 export const login = async (username, password) => {
-    const res = await fetch(`/login`, {
+    const res = await fetch(`/api/login`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ export const login = async (username, password) => {
 };
 
 export const logout = async () => {
-    const res = await fetch(`/logout`, {
+    const res = await fetch(`/api/logout`, {
         method: "POST",
         credentials: 'include'
     });
@@ -38,7 +38,7 @@ export const logout = async () => {
 };
 
 export const changePassword = async (user_id, newPassword) => {
-    const res = await fetch(`/users/${user_id}`, {
+    const res = await fetch(`/api/users/${user_id}`, {
         method: "PUT",
         headers: {
             'Content-Type': 'application/json'

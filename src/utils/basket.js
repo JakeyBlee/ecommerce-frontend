@@ -1,12 +1,12 @@
 export const fetchDatabaseBasket = async (user_id) => {
-    const res = await fetch(`/cart/${user_id}`, {
+    const res = await fetch(`/api/cart/${user_id}`, {
         credentials: "include"
     });
     return res;
 };
 
 export const addOneItemToDatabaseBasket = async (user_id, product_id) => {
-    const res = await fetch(`/cart/${user_id}`, {
+    const res = await fetch(`/api/cart/${user_id}`, {
         method: "POST",
         credentials: "include",
         headers: {
@@ -21,7 +21,7 @@ export const addOneItemToDatabaseBasket = async (user_id, product_id) => {
 };
 
 export const updateItemInDatabaseBasket = async (user_id, product_id, quantity) => {
-    const res = await fetch(`/cart/${user_id}/${product_id}`, {
+    const res = await fetch(`/api/cart/${user_id}/${product_id}`, {
         method: "PUT",
         credentials: "include",
         headers: {
@@ -37,7 +37,7 @@ export const updateItemInDatabaseBasket = async (user_id, product_id, quantity) 
 
 // whole basket on login
 export const updateDatabaseBasket = async (user_id, data) => {
-    const res = await fetch(`/cart/${user_id}`, {
+    const res = await fetch(`/api/cart/${user_id}`, {
         method: "PUT",
         credentials: "include",
         headers: {
@@ -49,7 +49,7 @@ export const updateDatabaseBasket = async (user_id, data) => {
 };
 
 export const deleteItemFromDatabaseBasket = async (user_id, product_id) => {
-    const res = await fetch(`/cart/${user_id}/${product_id}`, {
+    const res = await fetch(`/api/cart/${user_id}/${product_id}`, {
         method: "DELETE",
         credentials: "include",
         headers: {
@@ -60,7 +60,7 @@ export const deleteItemFromDatabaseBasket = async (user_id, product_id) => {
 };
 
 export const deleteDatabaseBasket = async (user_id) => {
-    const res = await fetch(`/cart/${user_id}`, {
+    const res = await fetch(`/api/cart/${user_id}`, {
         method: "DELETE",
         credentials: "include",
         headers: {
@@ -71,7 +71,7 @@ export const deleteDatabaseBasket = async (user_id) => {
 };
 
 export const checkout = async (user_id, date, total_cost) => {
-    const res = await fetch(`/cart/${user_id}/checkout`, {
+    const res = await fetch(`/api/cart/${user_id}/checkout`, {
         method: "POST",
         credentials: "include",
         headers: {
