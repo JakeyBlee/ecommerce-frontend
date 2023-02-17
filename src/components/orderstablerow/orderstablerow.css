@@ -1,0 +1,12 @@
+.ordersTableRow{
+    background-color: rgba(227, 177, 209, 0.5);
+}
+.ordersTableRow:hover{
+    cursor: pointer;
+    background-color: rgba(179, 108, 153, 0.5);
+}
+
+.ordersTableRow td{
+    text-align: left;
+    padding: 10px;
+}

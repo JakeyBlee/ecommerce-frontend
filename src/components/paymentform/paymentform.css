@@ -1,0 +1,31 @@
+.paymentform{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+#card-element{
+    width: 100%;
+    height: 30px;
+}
+
+.checkoutButton{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px black solid;
+    background-color: rgba(227, 204, 219, 0.5);
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+}
+.checkoutButton:hover{
+    cursor: pointer;
+    background-color: rgba(196, 149, 180, 0.5);
+}

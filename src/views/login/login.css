@@ -1,0 +1,69 @@
+.loginWindow{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 10%;
+    padding: 2%;
+    border: 1px black solid;
+    background-color: rgb(247, 236, 243);
+    border: 25px solid rgb(174, 155, 167);
+    border-radius: 5px;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+}
+.loginWindow:hover{
+    cursor: default;
+}
+
+.loginWindow h2{
+    text-align: center;
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    font-size: 60px;
+    font-weight: 200;
+}
+.loginWindow .formInputs{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+.loginWindow input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.loginWindow .nameInputs{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.loginWindow .nameInput{
+    width: 45%;
+}
+.loginWindow .button{
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 9999999999px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    width: 40%;
+    min-width: 120px;
+}
+.loginWindow .button:hover{
+    cursor: pointer;
+    background-color: rgb(209, 209, 209);
+}
+.loginWindow .breakLine{
+    margin-top: 20px;
+    border-top: 1px black solid;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width:750px){
+    .loginWindow h2{
+        font-size: 40px;
+        font-weight: 200;
+    }
+}

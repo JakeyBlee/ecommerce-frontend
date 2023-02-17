@@ -1,0 +1,141 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(247, 222, 247);
+}
+.companyInfo, .navButtons{
+    display: flex;
+    align-items: center;
+}
+.companyInfo{
+    border-radius: 5px;
+    padding-right: 20px;
+}
+.companyInfo:hover{
+    cursor: pointer;
+    background-color: rgb(232, 204, 242);
+}
+.header .siteIcon{
+    height: 50px;
+}
+.header .siteName{
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    padding-left: 10px;
+    font-size: 180%;
+    font-weight: 200;
+}
+
+/* Account Button */
+.accountbutton{
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    margin-right: 5px;
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 2 / 1;
+    padding: 5px;
+    display: flex;
+}
+.accountbutton:hover{
+    cursor: pointer;
+    background-color: rgb(232, 204, 242);
+}
+
+.accountbutton .smalltext{
+    display: flex;
+    align-items: center;
+    height: 40%;
+    font-size: 80%;
+}
+.accountbutton .largetext{
+    display: flex;
+    align-items: center;
+    height: 60%;
+    font-size: 100%;
+    font-weight: 500;
+}
+
+/* Basket Button */
+.basketbutton{
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    display: flex;
+    margin-right: 5px;
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 1.5 / 1;
+    padding: 5px;
+    display: flex;
+}
+.basketbutton:hover{
+    cursor: pointer;
+    background-color: rgb(232, 204, 242);
+}
+
+.basketbutton .smalltext{
+    display: flex;
+    align-items: center;
+    height: 40%;
+    font-size: 80%;
+}
+.basketCounter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.basketCounter .counter{
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    top: 35px;
+    justify-content: center;
+    align-items: flex-top;
+    font-size: 14px;
+    height: 22px;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 999999999px;
+}
+.basketCounter .basketicon {
+    height: 28px;
+    aspect-ratio: 1.5 / 1;
+}
+
+/* Logout Button */
+.logoutbutton{
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    display: flex;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    padding: 5px;
+    display: flex;
+}
+.logoutbutton:hover{
+    cursor: pointer;
+    background-color: rgb(232, 204, 242);
+}
+
+.logoutbutton .logtext{
+    font-size: 90%;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:600px){
+    .companyInfo{
+        padding-right: 0;
+    }
+    .companyInfo h1{
+        display: none;
+    }
+}

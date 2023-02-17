@@ -1,0 +1,31 @@
+.bio {
+    display: flex;
+    align-items: left;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+.bio .profilePic{
+    height: 200px;
+    border: 10px solid rgb(247, 222, 247);
+    border-radius: 10px;
+}
+.bio .profileText{
+    height: 100%;
+    margin-left: 5%;
+}
+.profileText h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.profileText p{
+    max-width: 800px;
+}
+
+@media only screen and (max-width:750px){
+    .bio{
+        display: none;
+    }
+}

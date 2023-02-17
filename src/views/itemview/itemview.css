@@ -1,0 +1,123 @@
+.item {
+    border: 1.5px black solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(247, 236, 243);
+}
+.item:hover{
+    cursor: default;
+}
+
+.item .productImages{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    max-width: 920px;
+    width: 100%;
+    margin: 5px;
+}
+.item .productImage, .item .mainImage{
+    border: 1px black solid;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+.item .itemTitle {
+    font-size: 30px;
+    padding: 10px;
+}
+.item .itemDesc {
+    margin: auto;
+    width: 920px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+}
+.item .addBasketButton {
+    text-align: center;
+    font-size: 20px;
+    padding: 8px 15px;
+    width: fit-content;
+    margin-bottom: 20px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.item .addBasketButton:hover{
+    cursor: pointer;
+    background-color: rgb(209, 209, 209);
+}
+.item .addBasketButton:active{
+    transition: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.item .itemViewAmountInfo{
+    display: flex;
+    font-size: 16px;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.itemViewAmountInfo .amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px black solid;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    height: 35px;
+    font-size: 16px;
+    background-color: white;
+}
+.itemViewAmountInfo .plusButton, .itemViewAmountInfo .minusButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px black solid;
+    border-radius: 5px;
+    aspect-ratio: 1 / 1;
+    height: 20px;
+}
+
+@media only screen and (max-width:950px){
+    .item .mainImage{
+        display: none;
+    }
+    .item .productImage{
+        display: flex;
+    }
+    .item .itemTitle {
+        font-size: 20px;
+    }
+    .item .itemDesc {
+        width: 610px;
+        font-size: 14px;
+    }
+    .item .addBasketButton {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:650px){
+    .item .mainImage{
+        display: flex;
+    }
+    .item .productImage{
+        display: none;
+    }
+    .item .itemTitle {
+        font-size: 16px;
+    }
+    .item .itemDesc {
+        width: 300px;
+        font-size: 12px;
+    }
+    .item .addBasketButton {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+}

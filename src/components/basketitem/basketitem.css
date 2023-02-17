@@ -1,0 +1,134 @@
+.basketItem{
+    display: grid;
+    grid-template: 1fr / 80px 1fr 50px 80px 20px;
+    max-width: 600px;
+    min-width: 250px;
+    height: fit-content;
+    margin: 10px;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.5px #000000 solid;
+    background-color: rgb(250, 242, 252);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.basketItem .productImage{
+    grid-area: 1 / 1 / 2 / 2;
+    height: 80px;
+    aspect-ratio: 1 / 1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.basketItem .itemBody{
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    padding-left: 20px;
+}
+.itemBody .productName{
+    font-size: 20px;
+}
+
+.basketItem .amountInfo{
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 16px;
+    height: 100%;
+    width: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.amountInfo .amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px black solid;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    height: 30px;
+    font-size: 16px;
+    background-color: white;
+}
+.amountInfo .plusButton, .amountInfo .minusButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.basketItem .productCost{
+    grid-area: 1 / 4 / 2 / 5;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: 1px black solid;
+}
+.basketItem .productCost{
+    font-size: 20px;
+}
+.basketItem .removeAllButton{
+    grid-area: 1 / 5 / 2 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 20px;
+    height: 100%;
+    background-color: rgba(125, 0, 0, 0.274);
+}
+
+.removeAllButton:hover, .plusButton:hover, .minusButton:hover{
+    cursor: pointer;
+    font-weight: 500;
+    background-color: rgb(232, 204, 242);
+}
+
+@media only screen and (max-width:750px){
+    .basketItem{
+        grid-template: 50px 30px / 1fr 80px 20px;
+    }
+    .itemBody .productName{
+        font-size: 16px;
+    }
+    .basketItem .productImage{
+        display: none;
+    }
+    .basketItem .itemBody{
+        grid-area: 1 / 1 / 3 / 2;
+        padding: 5px;
+        border-right: 1px black solid;
+    }
+    .itemBody .stockNumber{
+        display: none;
+    }
+    .basketItem .productCost{
+        grid-area: 2 / 2 / 3 / 3;
+        border-left: none;
+        width: 80px;
+        height: 10px;
+        font-size: 16px;
+    }
+    .basketItem .amountInfo{
+        grid-area: 1 / 2 / 2 / 3;
+        width: 80px;
+        height: 30px;
+        flex-direction: row;
+    }
+    .basketItem .removeAllButton{
+        grid-area: 1 / 3 / 3 / 4;
+    }
+}

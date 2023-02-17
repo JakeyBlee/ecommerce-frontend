@@ -1,0 +1,10 @@
+.orderTableRow{
+    background-color: rgba(227, 177, 209, 0.5);
+}
+.orderTableRow tr{
+    height: 50px;
+}
+.orderTableRow td{
+    text-align: left;
+    height: inherit;
+}

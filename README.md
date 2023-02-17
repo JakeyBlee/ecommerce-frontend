@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# E-Commerce Frontend React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is an independent coding project suggested by the Codecademy platform. It is built around the React.js framework to present a frontend view to a simple e-commerce single page application. It allows users to interect with the accompanying API in a clear and concise manner.
 
-In the project directory, you can run:
+This project serves as the front-end component of my Full Stack Career Path capstone project.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project displays products in a sample shop, and provides an interface for users to browse, view and purchase said items. There are separate views for logging in and signing up, viewing products, viewing orders, viewing the current basket and completing a purchase. The project is linked via proxy to a previosly coded Node.js RESTful API backend.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The project features simple responsive design through media queries to resize dependant on the device used to view the project. Routing is handled through React Router v6 to mimic the natural navigation of a standard webpage.
 
-### `npm test`
+## How to Use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This App will be hosted on a Netlify, harnessing a CICD pipeline through GitHub. In order to access the project users will access the Netlify domain. From the homepage users can browse products stored in the database, view their details and add them to a basket without needing to sign in. At the point of progressing the order to payment, sign in will be required. Accounts are created and managed through the app, allowing for the changing of passwords and viewing of previous orders. The current basket contents is stored on the database, and presists through logins. Upon sign in, the stored basket and newly created 'offline' basket are merged.
 
-### `npm run build`
+## Technololgies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is written using JavaScript and the React.js library. HTML elements are coded through JSX and styled using CSS stylesheets. State is managed through React Redux and navigation through React Router, which also allows for the layering of views throughout the SPA. View animation and transitions are managed through the use of the Framer Motion animation library.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project is hosted on the Netlify platform and uses asyncronous javascript and the Fetch API to make HTTP requests to an AWS EC2 server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Collaboraters
 
-### `npm run eject`
+I am the sole author of this project following its initiation through bootstrapping.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Licence
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The contents of this repository are owned solely by their author.
